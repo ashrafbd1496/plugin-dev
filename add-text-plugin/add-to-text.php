@@ -14,3 +14,9 @@
  * Text Domain:       adt-plugin
  * Domain Path:       /languages
  */
+
+
+ add_filter('the_content','add_to_end_of_the_post' );
+ function add_to_end_of_the_post(){
+    
+ }
