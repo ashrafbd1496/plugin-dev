@@ -17,6 +17,12 @@
 
 
  add_filter('the_content','add_to_end_of_the_post' );
- function add_to_end_of_the_post(){
-    
+
+ function add_to_end_of_the_post($content){
+    if(is_single() && is_main_query()){
+        return $content . '<h3>This text has added using plugin</h3>';
+    }
+
+    return $content;
+   
  }
