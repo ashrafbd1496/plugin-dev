@@ -9,6 +9,9 @@
 
 # Post Statistics Plugin
 [admin_menu](https://developer.wordpress.org/reference/hooks/admin_menu/)
+
 [add_menu_page](https://developer.wordpress.org/reference/functions/add_menu_page/)
+
 [add_options_page](https://developer.wordpress.org/reference/functions/add_options_page/)
+
 
