@@ -1,4 +1,4 @@
-# Add add text plugin
+# Add text plugin
 ### Devsonket Bangla WordPress plugin development cheatsheet 
 [Devsonket](https://devsonket.com/wordpress-plugin-development/)
 
@@ -14,4 +14,5 @@
 
 [add_options_page](https://developer.wordpress.org/reference/functions/add_options_page/)
 
+[google docs](https://docs.google.com/document/d/1vSWTkQqCkpRt3Uh5NkbyPBE8AocnQuTDx3h_FBHNIK8/edit)
 
