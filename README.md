@@ -24,6 +24,10 @@
 
 [add_settings_field()](https://developer.wordpress.org/reference/functions/add_settings_field/)
 
+[do_settings_sections()](https://developer.wordpress.org/reference/functions/do_settings_sections/)
+
+
+
 
 
 
