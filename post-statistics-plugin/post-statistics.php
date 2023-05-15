@@ -15,12 +15,25 @@
  * Domain Path:       /languages
  */
 
-add_action('admin_menu','plugin_setting');
+ class WCAndTime{
+    function __construct(){
+        add_action('admin_menu',array($this, 'plugin_setting'));
+    }
+    function plugin_setting(){
+        add_options_page('Word Count Settings', 'Word Count','manage_options','word-count-settings-page', array($this, 'pluginHtml'));
+    }
+     
+    function pluginHtml(){ ?>
+        <div class="wrap">
+            <h2>Word Count Settings </h2>
+        </div>
+    <?php }
+    
 
-function plugin_setting(){
-    add_options_page('Word Count Settings', 'Word Count','manage_options','word-count-settings-page', 'OurSettingPageHtml');
-}
+ }
 
-function OurSettingPageHtml(){ ?>
-    Bismiallah Hir rahmainir Rahim from new Plugin
-<?php }
+ $wcandtimeplugin = new WCAndTime();
+
+
+
+
