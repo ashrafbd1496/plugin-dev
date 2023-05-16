@@ -26,6 +26,10 @@
 
 [do_settings_sections()](https://developer.wordpress.org/reference/functions/do_settings_sections/)
 
+[submit_button()](https://developer.wordpress.org/reference/functions/submit_button/)
+
+
+
 
 
 

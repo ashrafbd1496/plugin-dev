@@ -11,7 +11,7 @@
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Update URI:        https://github.com/ashrafbd1496/plugin-dev
- * Text Domain:       pstatistics
+ * Text Domain:       wcp
  * Domain Path:       /languages
  */
 
@@ -34,18 +34,24 @@
     }
 
     function locationHtml(){ ?>
-        Hello
+       <select>
+            <option value="0">Beginning of Post</option>
+            <option value="1">End of Post</option> 
+        </select>
+
     <?php }
 
     function adminPage(){
-        add_options_page('Word Count Settings', 'Word Count','manage_options','word-count-settings-page', array($this, 'pluginHtml'));
+        add_options_page('Word Count Settings', 'Word Count','manage_options','word-count-settings-page', array($this, 'outerHtml'));
     }
      
-    function pluginHtml(){ ?>
+    function outerHtml(){ ?>
         <div class="wrap">
             <h2>Word Count Settings </h2>
             <form action = "options.php" method = "POST" >
-                <?php do_settings_sections('word-count-settings-page');
+                <?php
+                settings_fields('wordcountplugin');
+                do_settings_sections('word-count-settings-page');
                 submit_button();
                 
                 ?>
